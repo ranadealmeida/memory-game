@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ai Yazawa's Universe Memory Game</title>
+
+        <script defer src="script/script.js"></script>
+        <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+        <header>
+                <h1>Memory game</h1>
+                <div id="game-explanation">
+                        <p>A trip down memory lane with some of the most memorable characters created by Japanese manga
+                                artist Ai Yazawa.</p>
+
+                        <p>The game starts with all the cards facing down:
+                                <br>
+                                If the two cards have the same picture, you matched a pair and they will stay flipped
+                                up, otherwise the cards will once again face down.
+                        </p>
+                </div>
+        </header>
+        </header>
+        <button id="playButton">Play</button>
+
+        <div id="overlay" class="overlay">
+                <div id="squareSection">
+                        <button class="square" data-choice="Jouji"><img src="./assets/pictures/jouji.jpg"
+                                        alt="Jouji from Paradise Kiss"></button>
+                        <button class="square" data-choice="Arashi"><img src="./assets/pictures/arashi.jpg"
+                                        alt="Arashi from Paradise Kiss"></button>
+                        <button class="square" data-choice="Miwako"><img src="./assets/pictures/miwako.jpg"
+                                        alt="Miwako from Paradise Kiss"></button>
+                        <button class="square" data-choice="Takumi"><img src="./assets/pictures/takumi.jpg"
+                                        alt="Takumi from Nana"></button>
+                        <button class="square" data-choice="Nana"><img src="./assets/pictures/nana.jpg"
+                                        alt="Nana Osaki from Nana"></button>
+                        <button class="square" data-choice="Nobu"><img src="./assets/pictures/nobu.jpg"
+                                        alt="Nobu from Nana"></button>
+                        <button class="square" data-choice="Hachi"><img src="./assets/pictures/hachi.jpg"
+                                        alt="Nana Komatsu (Hachi) from Nana"></button>
+                        <button class="square" data-choice="Yasu"><img src="./assets/pictures/yasu.jpg"
+                                        alt="Yasu from Nana"></button>
+                        <button class="square" data-choice="Reira"><img src="./assets/pictures/reira.jpg"
+                                        alt="Reira from Nana"></button>
+                        <button class="square" data-choice="Ren"><img src="./assets/pictures/ren.jpg"
+                                        alt="Ren from Nana"></button>
+                        <button class="square" data-choice="Shin"><img src="./assets/pictures/shin.jpg"
+                                        alt="Shin from Nana"></button>
+                        <button class="square" data-choice="Hiro"><img src="./assets/pictures/hiro.jpg"
+                                        alt="Hiro from Paradise Kiss"></button>
+                        <button class="square" data-choice="Isabella"><img src="./assets/pictures/isabella.jpg"
+                                        alt="Isabella from Paradise Kiss"></button>
+                        <button class="square" data-choice="Caroline"><img src="./assets/pictures/caroline.jpg"
+                                        alt="Caroline from Paradise Kiss"></button>
+                        <button class="square" data-choice="Mikako"><img src="./assets/pictures/mikako.jpg"
+                                        alt="Mikako from Neighborhood Story and Paradise Kiss"></button>
+                        <button class="square" data-choice="Tsutomi"><img src="./assets/pictures/tsutomi.jpg"
+                                        alt="Tsutomi from Neighborhood Story and Paradise Kiss"></button>
+                        <button class="square" data-choice="Jouji"><img src="./assets/pictures/jouji.jpg"
+                                        alt="Jouji from Paradise Kiss"></button>
+                        <button class="square" data-choice="Arashi"><img src="./assets/pictures/arashi.jpg"
+                                        alt="Arashi from Paradise Kiss"></button>
+                        <button class="square" data-choice="Miwako"><img src="./assets/pictures/miwako.jpg"
+                                        alt="Miwako from Paradise Kiss"></button>
+                        <button class="square" data-choice="Takumi"><img src="./assets/pictures/takumi.jpg"
+                                        alt="Takumi from Nana"></button>
+                        <button class="square" data-choice="Nana"><img src="./assets/pictures/nana.jpg"
+                                        alt="Nana Osaki from Nana"></button>
+                        <button class="square" data-choice="Nobu"><img src="./assets/pictures/nobu.jpg"
+                                        alt="Nobu from Nana"></button>
+                        <button class="square" data-choice="Hachi"><img src="./assets/pictures/hachi.jpg"
+                                        alt="Nana Komatsu (Hachi) from Nana"></button>
+                        <button class="square" data-choice="Yasu"><img src="./assets/pictures/yasu.jpg"
+                                        alt="Yasu from Nana"></button>
+                        <button class="square" data-choice="Reira"><img src="./assets/pictures/reira.jpg"
+                                        alt="Reira from Nana"></button>
+                        <button class="square" data-choice="Ren"><img src="./assets/pictures/ren.jpg"
+                                        alt="Ren from Nana"></button>
+                        <button class="square" data-choice="Shin"><img src="./assets/pictures/shin.jpg"
+                                        alt="Shin from Nana"></button>
+                        <button class="square" data-choice="Hiro"><img src="./assets/pictures/hiro.jpg"
+                                        alt="Hiro from Paradise Kiss"></button>
+                        <button class="square" data-choice="Isabella"><img src="./assets/pictures/isabella.jpg"
+                                        alt="Isabella from Paradise Kiss"></button>
+                        <button class="square" data-choice="Caroline"><img src="./assets/pictures/caroline.jpg"
+                                        alt="Caroline from Paradise Kiss"></button>
+                        <button class="square" data-choice="Mikako"><img src="./assets/pictures/mikako.jpg"
+                                        alt="Mikako from Neighborhood Story and Paradise Kiss"></button>
+                        <button class="square" data-choice="Tsutomi"><img src="./assets/pictures/tsutomi.jpg"
+                                        alt="Tsutomi from Neighborhood Story and Paradise Kiss"></button>
+
+                        <span id="closeOverlay" class="close">&times;</span>
+                </div>
+        </div>
+
+        <div id="winOverlay" class="overlay">
+                <div class="winMessage">
+                        <h2>You did it!</h2>
+                        <button id="playAgainButton">Play Again</button>
+                </div>
+        </div>
+</body>
+
+</html>
